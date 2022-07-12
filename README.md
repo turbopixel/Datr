@@ -3,7 +3,7 @@
 
 ### What is Datr?
 
-A simple date converter library in PHP
+A simple date converter library in PHP.
 
 ### Dependencies
 
@@ -11,7 +11,8 @@ A simple date converter library in PHP
 
 ### Get Started
 
-You can find this library at [packagist.org](https://packagist.org/packages/turbopixel/datr). 
+You can find this library at [packagist.org](https://packagist.org/packages/turbopixel/datr).
+
 Just add Datr to the composer.json configuration file:
 
 > composer require turbopixel/datr
@@ -24,6 +25,7 @@ And update the composer:
 
 ```php
 
+// format date
 var_dump( Datr::toGermanDate("2022-07-12") );
 var_dump( Datr::toGermanDateTime("2022-07-12 02:47:12") );
 var_dump( Datr::toEnglishDate("12.07.2022") );
@@ -36,6 +38,14 @@ string(19) "12.07.2022 02:47:12"
 string(10) "2022-07-12"
 string(19) "2022-07-12 08:12:55"
 string(19) "2022-07-12 08:12:55"
+
+// date validation
+var_dump(Datr::isValid("12.07.2022 08:12:55", "d.m.Y"));
+bool(false) // -> wrong format
+
+var_dump(Datr::isValid("12.07.2022 08:12:55", "d.m.Y H:i:s"));
+bool(true)
+
 ```
 
 ## Contribution
