@@ -4,10 +4,12 @@
   "homepage": "https://github.com/turbopixel/Datr",
   "type": "library",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "keywords": [
     "date",
     "time",
+    "datetime",
+    "uhrzeit",
     "formatter",
     "converter"
   ],
@@ -31,7 +33,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Datr\\": "/src"
+      "turbopixel\\": "/src"
     }
   }
 }
