@@ -1,0 +1,37 @@
+{
+  "name": "turbopixel/datr",
+  "description": "Created for simple date conversion with predefined date formats.",
+  "homepage": "https://github.com/turbopixel/Datr",
+  "type": "library",
+  "license": "MIT",
+  "version": "0.1.0",
+  "keywords": [
+    "date",
+    "time",
+    "formatter",
+    "converter"
+  ],
+  "config": {
+    "optimize-autoloader": true
+  },
+  "support": {
+    "issues": "https://github.com/turbopixel/Datr/issues",
+    "source": "https://github.com/turbopixel/Datr"
+  },
+  "authors": [
+    {
+      "name": "Nico Hemkes",
+      "email": "nico@nokes.de",
+      "homepage": "https://hemk.es/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Datr\\": "/src"
+    }
+  }
+}
