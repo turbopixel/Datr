@@ -7,14 +7,17 @@ use DateTime;
 /**
  * Datr - Created for simple date conversion with predefined date formats.
  *
- * @author Nico Hemkes
+ * It uses the ISO 8601 format!
  *
+ * @link https://en.wikipedia.org/wiki/ISO_8601
+ * @author Nico Hemkes
  * @license MIT
  */
 final class Datr {
 
   /**
-   * Convert date to a english date format
+   * Convert date to a english date format.
+   * Year, month and day with dashes
    *
    * @param string $date
    *
@@ -26,7 +29,8 @@ final class Datr {
   }
 
   /**
-   * Convert date to a english datetime format
+   * Convert date to a english datetime format.
+   * Alias for toSql()!
    *
    * @param string $date
    *
@@ -34,7 +38,7 @@ final class Datr {
    */
   public static function toEnglishDateTime(string $date) : ?string {
 
-    return self::dateConvert($date, "Y-m-d H:i:s");
+    return self::toSql($date);
   }
 
   /**
